@@ -11,4 +11,4 @@ The section allows users to browse different bed products categorized by **Size*
 ## How to Use
 
 ### Live Demo
-[View Live Website]([https://yourusername.github.io/abenson-widget-clone](https://markies07.github.io/Front-end-Skill-Test/)])
+[View Live Website](https://yourusername.github.io/abenson-widget-clone](https://markies07.github.io/Front-end-Skill-Test/))
