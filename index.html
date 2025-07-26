@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Front-end Skill Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="svg" href="./assets/tab-icon.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <!-- TOP MENU -->
+            <div class="top-menu">
+                <!-- RIGHT SIDE -->
+                <button class="right-menu">
+                    <p>Our Shops</p>
+                    <img src="./assets/icons/arrow-down.svg" alt="">
+                </button>
+    
+                <!-- LEFT SIDE -->
+                <div class="left-menu">
+                    <button class="menu">
+                        <p>Download Abenson App</p>
+                        <img src="./assets/icons/arrow-down.svg" alt="">
+                    </button>
+                    <button class="menu">
+                        <p>Store Locator</p>
+                    </button>
+                    <button class="menu">
+                        <p>Order Tracker</p>
+                    </button>
+                    <button class="menu">
+                        <p>Viber Chat</p>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- MIDDLE MENU -->
+            <div class="contents">
+                <!-- BACK BTN -->
+                <img class="backbtn" src="./assets/icons/back.svg" alt="backbtn">
+    
+                <!-- LOGO -->
+                <img class="logo" src="./assets/img/logo.png" alt="logo">
+    
+                <!-- SEARCH BAR -->
+                <div class="search-container">
+                    <input class="search-bar" type="text" placeholder="Search">
+                    <img src="./assets/icons/search.svg" alt="">
+                </div>
+    
+                <!-- LOGIN / CART -->
+                <div class="right-side">
+                    <!-- LOGIN -->
+                    <div class="login">
+                        <img class="icon" src="./assets/icons/login.svg" alt="">
+                        <p>Login</p>
+                    </div>
+                        <!-- CART -->
+                    <div class="cart">
+                        <div class="icon-container">
+                            <img class="icon" src="./assets/icons/cart.svg" alt="">
+                            <!-- ITEMS -->
+                            <p class="items">1</p>
+                        </div>
+    
+                        <!-- WITH AMOUNT -->
+                        <div class="cart-amount">
+                            <p>Cart</p>
+                            <p class="total">₱999,999</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CUSTOMER SUPPORT -->
+                <img class="supportbtn" src="./assets/icons/support.svg" alt="supportbtn">
+            </div>
+        </div>
+
+        <!-- SCROLLED HEADER -->
+        <div class="scrolled-header">
+    
+            <!-- MIDDLE MENU -->
+            <div class="contents">
+                <!-- BACK BTN -->
+                <img class="backbtn" src="./assets/icons/back-blue.svg" alt="backbtn">
+    
+                <!-- LOGO -->
+                <img class="logo" src="./assets/img/blue-logo.png" alt="logo">
+    
+                <!-- SEARCH BAR -->
+                <div class="search-container">
+                    <input class="search-bar-scrolled" type="text" placeholder="Search">
+                    <img class="blue-search" style="padding: 5px 4px 0 0;" src="./assets/icons/search-blue.svg" alt="">
+                </div>
+    
+                <!-- LOGIN / CART -->
+                <div class="right-side">
+                    <!-- LOGIN -->
+                    <div class="login-blue">
+                        <img class="icon" src="./assets/icons/login-blue.svg" alt="">
+                        <p>Login</p>
+                    </div>
+                        <!-- CART -->
+                    <div class="cart-blue">
+                        <div class="icon-container">
+                            <img class="icon" src="./assets/icons/cart-blue.svg" alt="">
+                            <!-- ITEMS -->
+                            <p class="items">1</p>
+                        </div>
+    
+                        <!-- WITH AMOUNT -->
+                        <div class="cart-amount">
+                            <p>Cart</p>
+                            <p class="total">₱999,999</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CUSTOMER SUPPORT -->
+                <img class="supportbtn" src="./assets/icons/support-blue.svg" alt="supportbtn">
+            </div>
+        </div>
+
+        <!-- BOTTOM MENU -->
+        <div class="bottom-menu">
+            <button>Featured</button>
+            <button style="display: flex; align-items: center; gap: 7px;"><img src="./assets/icons/deals.svg" alt="">Deals</button>
+            <button>Mobile</button>
+            <button>Gadgets</button>
+            <button>TV</button>
+            <button>Aircon</button>
+            <button>Home Appliance</button>
+            <button>Small Appliance</button>
+            <button>Hardware</button>
+            <button>Furniture</button>
+            <button>Services</button>
+        </div>
+
+        <!-- SCROLLED BOTTOM MENU -->
+        <div class="scrolled-menu">
+            <button>Featured</button>
+            <button style="display: flex; align-items: center; gap: 7px;"><img src="./assets/icons/deals.svg" alt="">Deals</button>
+            <button>Mobile</button>
+            <button>Gadgets</button>
+            <button>TV</button>
+            <button>Aircon</button>
+            <button>Home Appliance</button>
+            <button>Small Appliance</button>
+            <button>Hardware</button>
+            <button>Furniture</button>
+            <button>Services</button>
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- ADVERTISEMENT -->
+        <div class="ad">
+            <h1 class="title">Choose your <span class="next">next</span> <span class="bed">bed</span></h1>
+            <p class="qoute">Better sleep begins with comfort that perfectly suits your rest style.</p>
+        </div>
+        
+        <!-- SORT -->
+        <div class="sort-wrapper"> 
+            <!-- SELECTOR -->
+            <div class="selector"></div>
+            <!-- SORT -->
+            <button class="sort-btn" data-tab="sizes">Sizes</button>
+            <button class="sort-btn active" data-tab="types">Types</button>
+            <button class="sort-btn" data-tab="firmness">Firmness</button>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="products">
+            <!-- SIZES SORT -->
+            <div class="product-wrapper" id="sizes">
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Single Bed.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Single <span>Bed</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Single <span>Bed</span></h1>
+                                <p class="product-desc">Compact bed ideal for kids or small spaces.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>36 in x 75 in</p>
+                                    <p>91cm x 191cm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>36 in x 75 in</p>
+                        <p>91cm x 191cm</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Twin Bed.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Twin <span>Bed</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Twin <span>Bed</span></h1>
+                                <p class="product-desc">Great for solo sleepers or guest rooms.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>39 in x 75 in</p>
+                                    <p>99 cm x 191 cm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>39 in x 75 in</p>
+                        <p>99 cm x 191 cm</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Double.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Double / <span>Full</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Double / <span>Full</span></h1>
+                                <p class="product-desc">Cozy for two, spacious for one.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>54 in x 75 in</p>
+                                    <p>137 cm x 191 cm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>54 in x 75 in</p>
+                        <p>137 cm x 191 cm</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Queen Size.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Queen <span>Size</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Queen <span>Size</span></h1>
+                                <p class="product-desc">Most popular size for couples.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>60 in x 80 in</p>
+                                    <p>152 cm x 203 cm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>60 in x 80 in</p>
+                        <p>152 cm x 203 cm</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/King Size.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">King <span>Size</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">King <span>Size</span></h1>
+                                <p class="product-desc">Extra-long bed for tall people; perfect for families.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>76 in x 80 in</p>
+                                    <p>193 cm x 203 cm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>76 in x 80 in</p>
+                        <p>193 cm x 203 cm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TYPES SORT -->
+            <div class="product-wrapper active" id="types">
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Trundle Bed.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Trundle <span>Bed</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Trundle <span>Bed</span></h1>
+                                <p class="product-desc">Space-saving functionality. It slides under another bed — easy extra sleeping space.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Shared Room</p>
+                                    <p>Guest Rooms</p>
+                                    <p>Families with Kids</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Shared Room</p>
+                        <p>Guest Rooms</p>
+                        <p>Families with Kids</p>
+                    </div>
+                </div>
+                
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Foam Mattress.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Foam <span>Mattress</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Foam <span>Mattress</span></h1>
+                                <p class="product-desc">Light with simple comfort. Also budget-friendly and versatile.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Kids Room</p>
+                                    <p>Light Sleeper</p>
+                                    <p>Short Term Comfort</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Kids Rooms</p>
+                        <p>Light Sleeper</p>
+                        <p>Short Term Comfort</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Spring Mattress.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Spring <span>Mattress</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Spring <span>Mattress</span></h1>
+                                <p class="product-desc">Firm, lifted, and breathable. It has classic feel with coil support and airflow.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Back Sleeper</p>
+                                    <p>Stomach Sleeper</p>
+                                    <p>Hot Sleeper</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Back Sleeper</p>
+                        <p>Stomach Sleeper</p>
+                        <p>Hot Sleeper</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Latex Foam.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Latex <span>Foam</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Latex <span>Foam</span></h1>
+                                <p class="product-desc">Firm but bouncy, naturally cool. Also breathable, hypoallergenic, eco-friendly, durable</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Combo Sleepers</p>
+                                    <p>Hot Sleepers</p>
+                                    <p>Allergy-prone User</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Combo Sleepers</p>
+                        <p>Hot Sleepers</p>
+                        <p>Allergy-prone User</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Foldable Bed.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Foldable <span>Bed</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Foldable <span>Bed</span></h1>
+                                <p class="product-desc">Soft, portable, and flexible. Can be folded for easy storage and transport.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Small Spaces</p>
+                                    <p>Guest Room</p>
+                                    <p>Quick Setup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Small Spaces</p>
+                        <p>Guest Room</p>
+                        <p>Quick Setup</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Memory Foam.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Memory <span>Foam</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Memory <span>Foam</span></h1>
+                                <p class="product-desc">Adapts to your body, relieves pressure, isolates movement</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Side Sleeper</p>
+                                    <p>Couples</p>
+                                    <p>With Back Pain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Side Sleeper</p>
+                        <p>Couples</p>
+                        <p>With Back Pain</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIRMNESS SORT -->
+            <div class="product-wrapper" id="firmness">
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Plush.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Plush</h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Plush</h1>
+                                <p class="product-desc">Very soft and cushiony — you’ll sink in and feel hugged. Great for pressure relief.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Side Sleeper</p>
+                                    <p>Combo Sleeper</p>
+                                    <p>With Back Pain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Side Sleeper</p>
+                        <p>Combo Sleeper</p>
+                        <p>With Back Pain</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Medium Plush.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Medium <span>Plush</span></h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Medium <span>Plush</span></h1>
+                                <p class="product-desc">Still soft, but with a little more pushback. A cozy balance of contour and support.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Side Sleeper</p>
+                                    <p>Combo Sleeper</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Side Sleeper</p>
+                        <p>Combo Sleeper</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <div class="product">
+                        <div class="image-container">
+                            <img class="product-image" src="./assets/img/products/Firm.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <h1 class="product-name">Firm</h1>
+                            <div class="overlay">
+                                <h1 class="overlay-name">Firm</h1>
+                                <p class="product-desc">More solid, with less give. Keeps your body lifted and aligned.</p>
+                                <!-- DESKTOP VIEW -->
+                                <div class="tags-desktop">
+                                    <p>Side Sleeper</p>
+                                    <p>Combo Sleeper</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>Side Sleeper</p>
+                        <p>Combo Sleeper</p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- BANNER MOBILE VIEW -->
+        <div class="banner-container">
+            <img class="banner" src="./assets/img/banner.svg" alt="">
+            <!-- PLACE HOLDER -->
+            <div class="placeholder">
+                <h1>Placeholder for Banner (Download App)</h1>
+            </div>
+        </div>
+
+        <div class="footer-wrapper">
+            <!-- DESKTOP VIEW SECTION 1 -->
+            <div class="section1">
+                <!-- SPECIAL OFFERS -->
+                <div class="offers">
+                    <div class="offers-text">
+                        <h1>Get Special Offers from Abenson</h1>
+                        <p>Join our subscription and get P100 Off on your first online order!</p>
+                    </div>
+                    <div class="email-input">
+                        <input type="email" placeholder="Enter Your Email Address">
+                        <button>Subcribe</button>
+                    </div>
+                </div>
+
+                <!-- BANNER FOR DESKTOP VIEW -->
+                <div class="desktop-banner">
+                    <img src="./assets/img/desktop-banner.svg" alt="">
+                    <div class="placeholder-desktop">
+                        <p>Placeholder for Banner (Download App)</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- DESKTOP VIEW SECTION 2 -->
+            <div class="section2">
+                <h1 class="connect" style="padding-bottom: 1rem;">Connect with us</h1>
+                <!-- SOCIALS -->
+                <div class="socials">
+                    <img src="./assets/icons/facebook.svg" alt="">
+                    <img src="./assets/icons/youtube.svg" alt="">
+                    <img src="./assets/icons/instagram.svg" alt="">
+                    <img src="./assets/icons/tiktok.svg" alt="">
+                    <img src="./assets/icons/viber.svg" alt="">
+                </div>
+    
+                <!-- SUPPORT -->
+                <div class="support-wrapper">
+                    <!-- MOBILE VIEW -->
+
+                    <!-- CONTACT US -->
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <p>Contact Us</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="contacts">
+                                <img src="./assets/icons/telephone.svg" alt="">
+                                <p>(02) 8811-8811</p>
+                            </div>
+                            <div class="contacts">
+                                <img src="./assets/icons/mobile.svg" alt="">
+                                <p>09088177788 | 09999906141</p>
+                            </div>
+                            <p class="seemorem">See more...</p>
+                        </div>
+                    </div>
+        
+                    <!-- IN-STORE -->
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <p>In-Store Personal Shopper</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                    </div>
+        
+                    <!-- OUR SERVICES -->
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <p>Our Services</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                    </div>
+        
+                    <!-- SUPPORT -->
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <p>Support</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                    </div>
+        
+                    <!-- DISCOVER -->
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <p>Discover</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <!-- DESKTOP VIEW -->
+                    <div class="dropdown-container-desktop">
+                        <div class="dropdown">
+                            <p>Online Personal Shopper</p>
+                        </div>
+                        <div class="contacts-wrapper">
+                            <div class="contacts">
+                                <img src="./assets/icons/telephone.svg" alt="">
+                                <p>(02) 8811-8811</p>
+                            </div>
+                            <div class="contacts">
+                                <img src="./assets/icons/mobile.svg" alt="">
+                                <p>09088177788 | 09999906141</p>
+                            </div>
+                            <p class="seemore">See more</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-container-desktop">
+                        <div class="dropdown">
+                            <p>In-Store Personal Shopper</p>
+                            <img class="arrow" src="./assets/icons/visit.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="dropdown-container-desktop">
+                        <div class="dropdown">
+                            <p>Overseas Hotlines</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="dropdown-container-desktop">
+                        <div class="dropdown">
+                            <p>Business Solutions</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="dropdown-container-desktop">
+                        <div class="dropdown">
+                            <p>Customer Care</p>
+                            <img class="arrow" src="./assets/icons/dropdown.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- DESKTOP VIEW SECTION 2 -->
+            <div class="section3">
+                <!-- DESKTOP VIEW -->
+                <div class="desktop-links">
+
+                    <!-- DISCOVER -->
+                    <div class="discover">
+                        <h1>Discover</h1>
+                        <p>Why Abenson</p>
+                        <p>Awesomeness Blog</p>
+                        <p>Buyer's Guide</p>
+                    </div>
+
+                    <!-- SUPPORT -->
+                    <div class="support">
+                        <h1>Support</h1>
+                        <p>Store Locator</p>
+                        <p>Order Tracker</p>
+                        <p>Safety Advisory</p>
+                    </div>
+
+                    <!-- OUR SERVICES -->
+                    <div class="services">
+                        <h1>Our Services</h1>
+                        <p>Click and Collect</p>
+                        <p>Business Solution</p>
+                        <p>Appliance Padala</p>
+                        <p>Gift Registry</p>
+                        <p>Easy Ink</p>
+                    </div>
+
+                    <!-- PAYMENT METHODS -->
+                    <div class="payment">
+                        <h1>Payment Methods</h1>
+                        <div class="payment-icons">
+                            <img src="./assets/icons/Visa.svg" alt="">
+                            <img src="./assets/icons/Mastercard.svg" alt="">
+                            <img src="./assets/icons/JCB.svg" alt="">
+                            <img src="./assets/icons/AE.svg" alt="">
+                            <img src="./assets/icons/PayPal.svg" alt="">
+                            <img src="./assets/icons/BDO.svg" alt="">
+                            <img src="./assets/icons/BPI.svg" alt="">
+                            <img src="./assets/icons/Metrobank.svg" alt="">
+                            <img src="./assets/icons/HSBC.svg" alt="">
+                            <img src="./assets/icons/RCBC.svg" alt="">
+                            <img src="./assets/icons/Grabpay.svg" alt="">
+                            <img src="./assets/icons/Maya.svg" alt="">
+                            <img src="./assets/icons/Gcash.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT METHODS -->
+                <div class="banking-container">
+                    <img src="./assets/icons/Visa.svg" alt="">
+                    <img src="./assets/icons/Mastercard.svg" alt="">
+                    <img src="./assets/icons/JCB.svg" alt="">
+                    <img src="./assets/icons/AE.svg" alt="">
+                    <img src="./assets/icons/PayPal.svg" alt="">
+                    <img src="./assets/icons/BDO.svg" alt="">
+                    <img src="./assets/icons/BPI.svg" alt="">
+                    <img src="./assets/icons/Metrobank.svg" alt="">
+                    <img src="./assets/icons/HSBC.svg" alt="">
+                    <img src="./assets/icons/RCBC.svg" alt="">
+                    <img src="./assets/icons/Grabpay.svg" alt="">
+                    <img src="./assets/icons/Maya.svg" alt="">
+                    <img src="./assets/icons/Gcash.svg" alt="">
+                </div>
+            </div>
+
+            <!-- LINKS MOBILE VIEW -->
+            <div class="links-wrapper">
+                <div>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Warranty</p>
+                </div>
+                <div>
+                    <p>FAQ</p>
+                    <p>Feedback</p>
+                    <p>Careers</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- COPY RIGHT -->
+        <div class="copyright">
+            <div class="links-desktop">
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Warranty</p> 
+            </div>
+            <p>Copyright © 2022 Abenson Ventures Inc. All rights reserved.</p>
+            <div class="links-desktop">
+                <p>FAQ</p>
+                <p>Feedback</p>
+                <p>Careers</p> 
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
