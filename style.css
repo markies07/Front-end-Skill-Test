@@ -3,6 +3,9 @@ html, body, div, span, h1, p, img, button, input {
     padding: 0;
     box-sizing: border-box;
 }
+*{
+    -webkit-tap-highlight-color: transparent;
+}
 
 button{
     background: none;
